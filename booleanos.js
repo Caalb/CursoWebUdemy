@@ -33,8 +33,5 @@ let nome = '';
 console.log(nome || 'Desconhecido'); // Se colocar algum nome que retorna falso, a saída vai ser "Desconhecido".
 
 nome = 'Lucas';
-console.log(nome || 'Desconhecido'); // Como o nome Lucas é true, irá retornar o nome e não "Desconhecido".
-
-
-
+console.log(nome || 'Desconhecido');
 
