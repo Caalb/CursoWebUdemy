@@ -1,0 +1,50 @@
+<h1>Projeto</h1>
+<ul class="tree" >
+   <li>
+       <span pastas>Backend</span>
+        <ul>
+            <li>
+                <span pastas>app</span>
+                <ul>
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <span pastas>config</span>
+            <ul>
+                <li>banco.js</li>
+                <li>rotas.js</li>
+                <li>servidor.js</li>
+                </li>
+            </ul>
+        </ul>
+    </li>
+    <li><span pastas>frontend</span>
+        <ul>
+            <li>
+                <span pastas>public</span>
+                <ul>
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+ 
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    const algo = document.querySelectorAll('[pastas]')
+    algo.forEach(pastas => {
+        pastas.onclick = function(e) {
+            const prox = pastas.nextElementSibling
+            if(prox.style.display === 'none') {
+                prox.style.display = 'block'
+            } else prox.style.display = 'none'
+        }
+    })
+ 
+</script>
